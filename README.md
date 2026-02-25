@@ -1,17 +1,24 @@
-# App Hub (Starter)
-
-A Python desktop app with:
-- Download Manager (queue, pause/resume/cancel)
-- AppImage scanner/launcher/integrator
+# Mini OS Helper (Starter)
 
 ## Run
 
 ```bash
-cd /home/evans/Documents/app-hub
+cd /home/evans/Documents/mini-os-helper
 python3 main.py
 ```
 
-## Notes
+## Includes
 
-- AppImage integration writes desktop entries to `~/.local/share/applications`.
-- Download target is configured in settings (`~/.config/app_hub/settings.json`).
+- Dashboard: live CPU/RAM/disk/battery/uptime snapshot
+- Quick Actions: open favorite folders + websites
+- Command runner with output
+- Notes tab with persistent storage
+- Light/Dark theme selection
+
+## Optional dependency
+
+Install `psutil` for richer system metrics:
+
+```bash
+pip install psutil
+```
