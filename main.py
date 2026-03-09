@@ -1,12 +1,9 @@
-import tkinter as tk
-
 from ui import MiniOSHelperApp
 
 
 def main():
-    root = tk.Tk()
-    MiniOSHelperApp(root)
-    root.mainloop()
+    app = MiniOSHelperApp()
+    app.run(None)
 
 
 if __name__ == "__main__":
