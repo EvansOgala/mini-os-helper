@@ -1,22 +1,29 @@
 # Mini OS Helper
 
-GTK4 desktop utility for quick system checks, shortcuts, and notes.
+Desktop utility for quick system checks, shortcuts, and notes.
 
 ## Features
 
 - Live CPU, RAM, disk, battery, and uptime snapshot
 - Quick actions for folders, websites, and shell commands
 - Notes tab with persistent local storage
-- Rounded GTK4 styling with light/dark preference
+- Light/dark preference with modern rounded UI
 
 ## Dependencies
 
 ### Runtime
 
 - Python 3.11+
+- Optional: `psutil` for richer system metrics
+
+Linux UI stack:
+
 - GTK4 + PyGObject
 - `xdg-utils`
-- Optional: `psutil` for richer system metrics
+
+Windows UI stack:
+
+- PySide6 (Qt)
 
 ### Install dependencies by distro
 
@@ -41,9 +48,19 @@ sudo dnf install -y python3 python3-gobject gtk4 xdg-utils python3-psutil
 
 ## Run from source
 
+### Linux
+
 ```bash
 cd /home/'your username'/Documents/mini-os-helper
 python3 main.py
+```
+
+### Windows
+
+```powershell
+cd C:\Users\your-username\Documents\mini-os-helper
+py -m pip install PySide6 psutil
+py main.py
 ```
 
 ## Build AppImage
@@ -68,3 +85,12 @@ chmod +x build-appimage.sh
 ```
 
 The script outputs an `.AppImage` file in the project root.
+
+## Build Windows (PyInstaller)
+
+```powershell
+cd C:\Users\your-username\Documents\mini-os-helper
+build-windows.bat
+```
+
+The executable is emitted to `dist\MiniOSHelper\`.
