@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mini OS Helper
+Comment=System helper dashboard and quick actions
+Exec=org.evans.MiniOSHelper
+Icon=org.evans.MiniOSHelper
+Terminal=false
+Categories=Utility;System;
+StartupNotify=true

@@ -1,0 +1,161 @@
+339 INFO: PyInstaller: 6.19.0, contrib hooks: 2026.2
+340 INFO: Python: 3.14.3
+345 INFO: Platform: Linux-6.19.6-arch1-1-x86_64-with-glibc2.43
+346 INFO: Python environment: /usr
+348 INFO: wrote /home/evans/Documents/mini-os-helper/MiniOSHelper.spec
+353 INFO: Removing temporary files and cleaning cache in /home/evans/.cache/pyinstaller
+357 INFO: Module search paths (PYTHONPATH):
+['/home/evans/Documents/mini-os-helper',
+ '/usr/lib/python314.zip',
+ '/usr/lib/python3.14',
+ '/usr/lib/python3.14/lib-dynload',
+ '/home/evans/.local/lib/python3.14/site-packages',
+ '/usr/lib/python3.14/site-packages',
+ '/home/evans/Documents/mini-os-helper']
+1498 INFO: checking Analysis
+1498 INFO: Building Analysis because Analysis-00.toc is non existent
+1499 INFO: Looking for Python shared library...
+1523 INFO: Using Python shared library: /usr/lib/libpython3.14.so.1.0
+1524 INFO: Running Analysis Analysis-00.toc
+1524 INFO: Target bytecode optimization level: 0
+1524 INFO: Initializing module dependency graph...
+1531 INFO: Initializing module graph hook caches...
+1598 INFO: Analyzing modules for base_library.zip ...
+8722 INFO: Processing standard module hook 'hook-encodings.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+10630 INFO: Processing standard module hook 'hook-pickle.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+13091 INFO: Processing standard module hook 'hook-difflib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+13174 INFO: Processing standard module hook 'hook-heapq.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+30503 INFO: Caching module dependency graph...
+30726 INFO: Analyzing /home/evans/Documents/mini-os-helper/main.py
+30851 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+31299 INFO: Processing standard module hook 'hook-gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+31835 INFO: Processing pre-safe-import-module hook 'hook-gi.overrides.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+32412 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+32415 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+32417 INFO: Processing standard module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+32418 INFO: Processing standard module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+32975 INFO: Processing standard module hook 'hook-sysconfig.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+33019 INFO: Processing standard module hook 'hook-_ctypes.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+33616 INFO: Processing standard module hook 'hook-platform.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+33641 INFO: Analyzing hidden import 'gi.overrides.Gtk'
+34066 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GObject.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+34070 INFO: Processing standard module hook 'hook-gi.repository.GObject.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+37454 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+38111 INFO: Processing standard module hook 'hook-xml.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+42890 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+42894 INFO: Processing standard module hook 'hook-gi.repository.Gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+44760 INFO: Processing module hooks (post-graph stage)...
+44832 INFO: Processing standard module hook 'hook-gi.repository.Gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+52699 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.xlib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+52703 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Gdk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+52704 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Atk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+53557 INFO: Processing standard module hook 'hook-gi.repository.GLib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+56606 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GModule.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+56625 INFO: Processing standard module hook 'hook-gi.repository.Gdk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+58556 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.cairo.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+58560 INFO: Processing standard module hook 'hook-gi.repository.cairo.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+60299 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.Pango.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+60303 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.GdkPixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+60483 INFO: Processing standard module hook 'hook-gi.repository.xlib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+62157 INFO: Processing standard module hook 'hook-gi.repository.Atk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+63905 INFO: Processing standard module hook 'hook-gi.repository.Pango.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+65656 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.HarfBuzz.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+65658 INFO: Processing standard module hook 'hook-gi.repository.GdkPixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+67482 INFO: Processing standard module hook 'hook-gi.repository.GModule.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+69215 INFO: Processing standard module hook 'hook-gi.repository.HarfBuzz.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+71012 INFO: Processing pre-safe-import-module hook 'hook-gi.repository.freetype2.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/pre_safe_import_module'
+71019 INFO: Processing standard module hook 'hook-gi.repository.freetype2.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks'
+72982 INFO: Performing binary vs. data reclassification (4810 entries)
+74909 INFO: Looking for ctypes DLLs
+75175 INFO: Analyzing run-time hooks ...
+75182 INFO: Including run-time hook 'pyi_rth_glib.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75191 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75202 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75219 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75231 INFO: Including run-time hook 'pyi_rth_gio.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75236 INFO: Including run-time hook 'pyi_rth_gtk.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75241 INFO: Including run-time hook 'pyi_rth_gdkpixbuf.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75254 INFO: Including run-time hook 'pyi_rth_gi.py' from '/home/evans/.local/lib/python3.14/site-packages/PyInstaller/hooks/rthooks'
+75780 INFO: Compiling collected GLib schema files in '/home/evans/Documents/mini-os-helper/build/MiniOSHelper/_pyi_gschema_compilation'...
+76080 INFO: Creating base_library.zip...
+76172 INFO: Looking for dynamic libraries
+80989 INFO: Warnings written to /home/evans/Documents/mini-os-helper/build/MiniOSHelper/warn-MiniOSHelper.txt
+81080 INFO: Graph cross-reference written to /home/evans/Documents/mini-os-helper/build/MiniOSHelper/xref-MiniOSHelper.html
+82073 INFO: checking PYZ
+82074 INFO: Building PYZ because PYZ-00.toc is non existent
+82076 INFO: Building PYZ (ZlibArchive) /home/evans/Documents/mini-os-helper/build/MiniOSHelper/PYZ-00.pyz
+83958 INFO: Building PYZ (ZlibArchive) /home/evans/Documents/mini-os-helper/build/MiniOSHelper/PYZ-00.pyz completed successfully.
+84007 INFO: checking PKG
+84007 INFO: Building PKG because PKG-00.toc is non existent
+84007 INFO: Building PKG (CArchive) MiniOSHelper.pkg
+84076 INFO: Building PKG (CArchive) MiniOSHelper.pkg completed successfully.
+84081 INFO: Bootloader /home/evans/.local/lib/python3.14/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+84083 INFO: checking EXE
+84084 INFO: Building EXE because EXE-00.toc is non existent
+84085 INFO: Building EXE from EXE-00.toc
+84086 INFO: Copying bootloader EXE to /home/evans/Documents/mini-os-helper/build/MiniOSHelper/MiniOSHelper
+84088 INFO: Appending PKG archive to custom ELF section in EXE
+84146 INFO: Building EXE from EXE-00.toc completed successfully.
+84666 INFO: checking COLLECT
+84668 INFO: Building COLLECT because COLLECT-00.toc is non existent
+84669 INFO: Building COLLECT COLLECT-00.toc
+93178 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+93781 INFO: Build complete! The results are available in: /home/evans/Documents/mini-os-helper/dist
+appimagetool, continuous build (git version 8c8c91f), build 295 built on 2025-12-04 17:56:36 UTC
+/home/evans/Documents/mini-os-helper/AppDir/org.evans.MiniOSHelper.desktop: hint: value "Utility;System;" for key "Categories" in group "Desktop Entry" contains more than one main category; application might appear more than once in the application menu
+Using architecture x86_64
+/home/evans/Documents/mini-os-helper/AppDir should be packaged as org.evans.MiniOSHelper-x86_64.AppImage
+Deleting pre-existing .DirIcon
+Creating .DirIcon symlink based on information from desktop file
+AppStream upstream metadata found in usr/share/metainfo/org.evans.MiniOSHelper.appdata.xml
+Trying to validate AppStream information with the appstreamcli tool
+In case of issues, please refer to https://github.com/ximion/appstream
+org.evans.MiniOSHelper.metainfo.xml
+
+org.evans.MiniOSHelper.appdata.xml
+
+✔ Validation was successful: pedantic: 2
+Trying to validate AppStream information with the appstream-util tool
+In case of issues, please refer to https://github.com/hughsie/appstream-glib
+/home/evans/Documents/mini-os-helper/AppDir/usr/share/metainfo/org.evans.MiniOSHelper.appdata.xml: OK
+Generating squashfs...
+Downloading runtime file from https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-x86_64
+Downloaded runtime binary of size 944632
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on org.evans.MiniOSHelper-x86_64.AppImage, block size 131072.
+[===\                                                          ]  300/5601   5%[====/                                                         ]  400/5601   7%[=============================================================\] 5601/5601 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 55163.42 Kbytes (53.87 Mbytes)
+	35.49% of uncompressed filesystem size (155451.90 Kbytes)
+Inode table size 45654 bytes (44.58 Kbytes)
+	26.45% of uncompressed inode table size (172626 bytes)
+Directory table size 55119 bytes (53.83 Kbytes)
+	34.50% of uncompressed directory table size (159786 bytes)
+Number of duplicate files found 720
+Number of inodes 5202
+Number of files 4710
+Number of fragments 274
+Number of symbolic links 80
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 412
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Embedding ELF...
+Marking the AppImage as executable...
+Embedding MD5 digest
+Success
+
+Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+central directory of available AppImages, by opening a pull request
+at https://github.com/AppImage/appimage.github.io
+Built: org.evans.MiniOSHelper-x86_64.AppImage

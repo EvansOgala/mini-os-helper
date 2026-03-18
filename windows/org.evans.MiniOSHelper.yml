@@ -1,0 +1,37 @@
+app-id: org.evans.MiniOSHelper
+runtime: org.gnome.Platform
+runtime-version: "48"
+sdk: org.gnome.Sdk
+command: org.evans.MiniOSHelper
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=x11
+  - --share=network
+  - --filesystem=home
+
+modules:
+  - name: python3-psutil
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --no-deps --no-build-isolation --prefix=/app .
+    sources:
+      - type: git
+        url: https://github.com/giampaolo/psutil.git
+        tag: release-5.9.8
+
+  - name: mini-os-helper
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 run-mini-os-helper.sh /app/bin/org.evans.MiniOSHelper
+      - install -Dm644 main.py /app/share/org.evans.MiniOSHelper/main.py
+      - install -Dm644 ui.py /app/share/org.evans.MiniOSHelper/ui.py
+      - install -Dm644 system_info.py /app/share/org.evans.MiniOSHelper/system_info.py
+      - install -Dm644 quick_actions.py /app/share/org.evans.MiniOSHelper/quick_actions.py
+      - install -Dm644 settings.py /app/share/org.evans.MiniOSHelper/settings.py
+      - install -Dm644 org.evans.MiniOSHelper.desktop /app/share/applications/org.evans.MiniOSHelper.desktop
+      - install -Dm644 org.evans.MiniOSHelper.metainfo.xml /app/share/metainfo/org.evans.MiniOSHelper.metainfo.xml
+      - install -Dm644 org.evans.MiniOSHelper.svg /app/share/icons/hicolor/scalable/apps/org.evans.MiniOSHelper.svg
+    sources:
+      - type: dir
+        path: .
