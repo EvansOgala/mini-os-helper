@@ -1,8 +1,10 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 import os
-
-project_path = os.path.abspath(os.path.dirname(__file__))
+try:
+    project_path = os.path.abspath(os.path.dirname(__file__))
+except NameError:
+    project_path = os.path.abspath(os.getcwd())
 
 icon_file = 'app_icon.ico' if os.path.exists('app_icon.ico') else None
 
