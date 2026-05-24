@@ -1,10 +1,11 @@
 pkgname=mini-os-helper-git
-pkgver=0.r0.g0000000
+pkgver=0.r11.gefa67c5
 pkgrel=1
 pkgdesc="GTK4 system helper dashboard with quick actions and notes"
 arch=('any')
 url="https://github.com/EvansOgala/mini-os-helper"
 license=('MIT')
+options=('!strip' '!debug')
 depends=(
   'python'
   'python-gobject'
@@ -23,20 +24,20 @@ pkgver() {
     "$(git rev-parse --short HEAD)"
 }
 
+build() {
+  cd "$srcdir/$pkgname"
+  python3 -m PyInstaller --clean --noconfirm --log-level=ERROR MiniOSHelper.spec
+}
+
 package() {
   cd "$srcdir/$pkgname"
 
   install -d "$pkgdir/usr/lib/mini-os-helper"
-  install -Dm644 main.py "$pkgdir/usr/lib/mini-os-helper/main.py"
-  install -Dm644 ui.py "$pkgdir/usr/lib/mini-os-helper/ui.py"
-  install -Dm644 gtk_style.py "$pkgdir/usr/lib/mini-os-helper/gtk_style.py"
-  install -Dm644 settings.py "$pkgdir/usr/lib/mini-os-helper/settings.py"
-  install -Dm644 quick_actions.py "$pkgdir/usr/lib/mini-os-helper/quick_actions.py"
-  install -Dm644 system_info.py "$pkgdir/usr/lib/mini-os-helper/system_info.py"
+  cp -a dist/MiniOSHelper/. "$pkgdir/usr/lib/mini-os-helper/"
 
-  install -Dm755 /dev/stdin "$pkgdir/usr/bin/org.evans.MiniOSHelper" <<'LAUNCHER'
+  install -Dm755 /dev/stdin "$pkgdir/usr/bin/mini-os-helper" <<'LAUNCHER'
 #!/bin/sh
-exec /usr/bin/python3 /usr/lib/mini-os-helper/main.py "$@"
+exec /usr/lib/mini-os-helper/MiniOSHelper "$@"
 LAUNCHER
 
   install -Dm644 org.evans.MiniOSHelper.desktop \

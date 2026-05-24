@@ -2,11 +2,13 @@
 
 import os
 
+project_path = os.path.abspath(os.path.dirname(__file__))
+
 icon_file = 'app_icon.ico' if os.path.exists('app_icon.ico') else None
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[project_path],
     binaries=[],
     datas=[('org.evans.MiniOSHelper.svg', '.')],
     hiddenimports=[
@@ -15,6 +17,8 @@ a = Analysis(
         'gi.repository.Gtk',
         'gi.repository.Gio',
         'gi.repository.GLib',
+        'gi.repository.GObject',
+        'gi.repository.GdkPixbuf',
         'pyside_ui',
         'PySide6',
         'PySide6.QtCore',
