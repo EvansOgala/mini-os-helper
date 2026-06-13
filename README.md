@@ -18,32 +18,28 @@ Desktop utility for quick system checks, shortcuts, and notes.
 
 Linux UI stack:
 
-- GTK4 + PyGObject
-- `xdg-utils`
-
-Windows UI stack:
-
 - PySide6 (Qt)
+- `xdg-utils`
 
 ### Install dependencies by distro
 
 #### Arch Linux / Nyarch
 
 ```bash
-sudo pacman -S --needed python python-gobject gtk4 xdg-utils python-psutil
+sudo pacman -S --needed python python-pyside6 xdg-utils python-psutil
 ```
 
 #### Debian / Ubuntu
 
 ```bash
 sudo apt update
-sudo apt install -y python3 python3-gi gir1.2-gtk-4.0 xdg-utils python3-psutil
+sudo apt install -y python3 python3-pyside6 xdg-utils python3-psutil
 ```
 
 #### Fedora
 
 ```bash
-sudo dnf install -y python3 python3-gobject gtk4 xdg-utils python3-psutil
+sudo dnf install -y python3 python3-pyside6 xdg-utils python3-psutil
 ```
 
 ## Run from source

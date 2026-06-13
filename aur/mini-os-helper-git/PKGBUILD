@@ -1,14 +1,13 @@
 pkgname=mini-os-helper-git
 pkgver=0.r0.g0000000
 pkgrel=1
-pkgdesc="GTK4 system helper dashboard with quick actions and notes"
+pkgdesc="PySide6 (Qt) system helper dashboard with quick actions and notes"
 arch=('any')
 url="https://github.com/EvansOgala/mini-os-helper"
 license=('MIT')
 depends=(
   'python'
-  'python-gobject'
-  'gtk4'
+  'pyside6'
   'xdg-utils'
   'python-psutil'
 )
@@ -29,7 +28,7 @@ package() {
   install -d "$pkgdir/usr/lib/mini-os-helper"
   install -Dm644 main.py "$pkgdir/usr/lib/mini-os-helper/main.py"
   install -Dm644 ui.py "$pkgdir/usr/lib/mini-os-helper/ui.py"
-  install -Dm644 gtk_style.py "$pkgdir/usr/lib/mini-os-helper/gtk_style.py"
+  install -Dm644 qt_style.py "$pkgdir/usr/lib/mini-os-helper/qt_style.py"
   install -Dm644 settings.py "$pkgdir/usr/lib/mini-os-helper/settings.py"
   install -Dm644 quick_actions.py "$pkgdir/usr/lib/mini-os-helper/quick_actions.py"
   install -Dm644 system_info.py "$pkgdir/usr/lib/mini-os-helper/system_info.py"
