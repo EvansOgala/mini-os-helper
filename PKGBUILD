@@ -1,5 +1,5 @@
 pkgname=mini-os-helper-git
-pkgver=0.r12.gd974efd
+pkgver=0.r15.g06f1be2
 pkgrel=1
 pkgdesc="PySide6 (Qt) system helper dashboard with quick actions and notes"
 arch=('any')
